@@ -22,15 +22,19 @@ namespace List_TDD_Practice.Tests
 
             // In this case ___FILL_ME_IN__ is what you expect the value to be
             // and list.Count is the actual value provided by your program
-            Assert.Equal(__FILL_ME_IN__, list.Count);
+            Assert.Equal(0, list.Count);
         }
 
         [Fact]
         public void Lists_Can_Be_Initialized_With_Items()
         {
-            var list = new List<int>()
+            var list = new List<int>();
             {
                 // Add 3 items to the list here.
+                list.Add(1);
+                list.Add(2);
+                list.Add(3);
+
             };
 
             Assert.Equal(3, list.Count);

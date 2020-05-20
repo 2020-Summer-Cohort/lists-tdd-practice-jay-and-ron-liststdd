@@ -46,6 +46,7 @@ namespace List_TDD_Practice.Tests
             var list = new List<string>();
 
             // Use one of List's methods to add an item here.
+            list.Add("new Item");
 
             Assert.NotEmpty(list);
         }
@@ -57,7 +58,7 @@ namespace List_TDD_Practice.Tests
 
             int indexOfSecondItem = list.IndexOf("Bar");
 
-            Assert.Equal(__FILL_ME_IN__, indexOfSecondItem);
+            Assert.Equal(1, indexOfSecondItem);
         }
 
         [Fact]
@@ -99,7 +100,7 @@ namespace List_TDD_Practice.Tests
             var list = new List<string>() { "Foo", "Bar", "Baz" };
 
             // Use an indexer (square brackets) to change "Bar" to "Quux".
-            list[0] = "Quux";
+            list[1] = "Quux";
             Assert.Equal(new List<string> { "Foo", "Quux", "Baz" }, list);
         }
 
